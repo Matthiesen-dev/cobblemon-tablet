@@ -20,8 +20,8 @@ jobs:
       contents: write
     with:
       tag_name: ${{ github.event.release.tag_name }}
-      artifact_basename: "template-cobblemon-sidemod"
-      mod_name: "Template Cobblemon Sidemod"
+      artifact_basename: "cobblemon-tablet"
+      mod_name: "Cobblemon Tablet"
       changelog: ${{ github.event.release.body }}
       fabric_loader_version: "0.17.2+"
       neoforge_loader_version: "21.1.182+"

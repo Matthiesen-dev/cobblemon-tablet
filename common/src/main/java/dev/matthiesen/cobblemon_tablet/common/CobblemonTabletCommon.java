@@ -1,18 +1,18 @@
-package dev.matthiesen.template_cobblemon_sidemod.common;
+package dev.matthiesen.cobblemon_tablet.common;
 
 import dev.matthiesen.common.matthiesen_lib_api.MatthiesenLibApi;
 import dev.matthiesen.common.matthiesen_lib_api.abstracts.AbstractCommonMod;
 import dev.matthiesen.libs.faststats.Token;
 import org.jetbrains.annotations.Nullable;
 
-public class ExampleModCommon extends AbstractCommonMod {
-    public static final String MOD_ID = "template_cobblemon_sidemod";
-    public static final String MOD_NAME = "Template Side-Mod";
+public class CobblemonTabletCommon extends AbstractCommonMod {
+    public static final String MOD_ID = "cobblemon_tablet";
+    public static final String MOD_NAME = "Cobblemon Tablet";
     public static @Token final String METRICS_TOKEN = "";
 
-    public static final ExampleModCommon INSTANCE = new ExampleModCommon();
+    public static final CobblemonTabletCommon INSTANCE = new CobblemonTabletCommon();
 
-    public ExampleModCommon() {
+    public CobblemonTabletCommon() {
         super(MOD_ID, MOD_NAME);
     }
 
