@@ -1,0 +1,6 @@
+{
+  "item.cobblemon_tablet.tablet": "Tablet",
+
+  "messages.cobblemon_tablet.error.in_battle": "You cannot open the PC while in battle!",
+  "messages.cobblemon_tablet.error.failed_to_open_pc": "Failed to open the PC!"
+}
