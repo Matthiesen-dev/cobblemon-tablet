@@ -34,7 +34,7 @@ public final class TabletItem extends Item {
         if (!(player instanceof ServerPlayer serverPlayer)) return;
 
         if (PlayerExtensionsKt.isInBattle(serverPlayer)) {
-            serverPlayer.sendSystemMessage(Component.translatable("messages.cobblemon_tablet.error.in_battle").withStyle(net.minecraft.ChatFormatting.RED));
+            serverPlayer.sendSystemMessage(Component.translatable("messages.cobblemon_tablet.error.in_battle").withStyle(net.minecraft.ChatFormatting.RED), true);
             return;
         }
 
@@ -45,7 +45,7 @@ public final class TabletItem extends Item {
             new OpenPCPacket(pc).sendToPlayer(serverPlayer);
         } catch (RuntimeException e) {
             CobblemonTabletCommon.INSTANCE.createErrorLog("Failed to open PC for player " + player.getName().getString() + ": " + e.getMessage(), e);
-            serverPlayer.sendSystemMessage(Component.translatable("messages.cobblemon_tablet.error.failed_to_open_pc").withStyle(net.minecraft.ChatFormatting.RED));
+            serverPlayer.sendSystemMessage(Component.translatable("messages.cobblemon_tablet.error.failed_to_open_pc").withStyle(net.minecraft.ChatFormatting.RED), true);
         }
     }
 }
