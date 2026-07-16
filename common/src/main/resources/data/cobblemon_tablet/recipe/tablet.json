@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#|#",
+    "###"
+  ],
+  "key": {
+    "|": { "item": "cobblemon:pc" },
+    "#": { "tag": "cobblemon_tablet:craftable_glass" }
+  },
+  "result": {
+    "id": "pc_on_a_stick:pc_on_a_stick",
+    "count": 1
+  }
+}
