@@ -7,6 +7,8 @@
 
 Ever wanted a portable PC to change your party on the fly? Look no father then the Cobblemon Tablet!
 
+This mod adds a new item, the Cobblemon Tablet, which allows you to access your PC from anywhere in the world. Simply right-click with the tablet in hand to open your PC and manage your party.
+
 ## Requirements
 - [Matthiesen Lib API](https://modrinth.com/mod/matthiesen-lib-api)
 - [Cobblemon](https://modrinth.com/mod/cobblemon)
