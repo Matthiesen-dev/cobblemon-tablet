@@ -40,3 +40,10 @@ mandatory = true
 versionRange = "[1.11.3,)"
 ordering = "AFTER"
 side = "SERVER"
+
+[[dependencies.${mod_id}]]
+modId = "matthiesen_lib"
+mandatory = true
+versionRange = "[1.11.3,)"
+ordering = "AFTER"
+side = "SERVER"
