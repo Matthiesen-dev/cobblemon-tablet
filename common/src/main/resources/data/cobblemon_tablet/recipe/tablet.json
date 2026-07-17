@@ -11,7 +11,7 @@
     "#": { "tag": "cobblemon_tablet:craftable_glass" }
   },
   "result": {
-    "id": "pc_on_a_stick:pc_on_a_stick",
+    "id": "cobblemon_tablet:tablet",
     "count": 1
   }
 }

@@ -1,5 +1,6 @@
 package dev.matthiesen.cobblemon_tablet.common;
 
+import dev.matthiesen.cobblemon_tablet.common.registry.CreativeModeTabRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.ItemRegistry;
 import dev.matthiesen.common.matthiesen_lib_api.abstracts.AbstractCommonMod;
 import dev.matthiesen.libs.faststats.Token;
@@ -19,6 +20,7 @@ public final class CobblemonTabletCommon extends AbstractCommonMod {
     public void initialize() {
         super.initialize();
         ItemRegistry.init();
+        CreativeModeTabRegistry.init();
 
         createInfoLog("Initialized");
     }
