@@ -13,7 +13,8 @@ public class CobblemonTabletFabricClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        CobblemonTabletCommonClient.initialize();
+        var instance = CobblemonTabletCommonClient.INSTANCE;
+        instance.initialize();
 
         openPcKey = KeyBindingHelper.registerKeyBinding(CobblemonTabletCommonClient.OPEN_PC_KEYBIND);
 

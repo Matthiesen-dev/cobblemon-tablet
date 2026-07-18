@@ -17,8 +17,10 @@ import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 @Mod(value = CobblemonTabletCommon.MOD_ID, dist = Dist.CLIENT)
 public class CobblemonTabletNeoForgeClient {
     public static KeyMapping openPcKey;
+    public static CobblemonTabletCommonClient INSTANCE;
 
     public CobblemonTabletNeoForgeClient(IEventBus modBus) {
+        INSTANCE = CobblemonTabletCommonClient.INSTANCE;
         modBus.addListener(this::clientSetup);
         modBus.addListener(this::registerBindings);
 
@@ -26,7 +28,7 @@ public class CobblemonTabletNeoForgeClient {
     }
 
     public void clientSetup(FMLClientSetupEvent event) {
-        CobblemonTabletCommonClient.initialize();
+        INSTANCE.initialize();
     }
 
     public void registerBindings(RegisterKeyMappingsEvent event) {
