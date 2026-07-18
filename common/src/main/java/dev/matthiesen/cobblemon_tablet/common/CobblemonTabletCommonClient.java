@@ -22,7 +22,7 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
         OPEN_PC_KEYBIND = new KeyMapping(
                 "key.cobblemon_tablet.open_pc_tablet",
                 InputConstants.Type.KEYSYM,
-                GLFW.GLFW_KEY_P,
+                GLFW.GLFW_KEY_V,
                 "category.cobblemon_tablet.title"
         );
 
