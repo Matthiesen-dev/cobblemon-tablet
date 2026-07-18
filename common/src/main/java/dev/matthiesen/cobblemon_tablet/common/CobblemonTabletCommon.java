@@ -1,5 +1,6 @@
 package dev.matthiesen.cobblemon_tablet.common;
 
+import dev.matthiesen.cobblemon_tablet.common.registry.NetworkingRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.CreativeModeTabRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.ItemRegistry;
 import dev.matthiesen.common.matthiesen_lib_api.abstracts.AbstractCommonMod;
@@ -21,16 +22,14 @@ public final class CobblemonTabletCommon extends AbstractCommonMod {
         super.initialize();
         ItemRegistry.init();
         CreativeModeTabRegistry.init();
+        NetworkingRegistry.init();
 
         createInfoLog("Initialized");
     }
 
     @Override
     public Runnable reload() {
-        return () -> {
-            // TODO
-            createInfoLog("Reloaded");
-        };
+        return () -> createInfoLog("Reloaded");
     }
 
     @Override
