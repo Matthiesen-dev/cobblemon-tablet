@@ -12,6 +12,7 @@ on:
 # - Cobblemon (MdwFAVRL)
 # - Matthiesen Lib API (j2JrSWnx)
 # - Matthiesen Lib (cPmFkPpB)
+# - Accessories (jtmvUHXj)
 
 jobs:
   publish:
@@ -31,7 +32,8 @@ jobs:
         [
           {"project_id":"MdwFAVRL","dependency_type":"required"},
           {"project_id":"j2JrSWnx","dependency_type":"required"},
-          {"project_id":"cPmFkPpB","dependency_type":"required"}
+          {"project_id":"cPmFkPpB","dependency_type":"required"},
+          {"project_id":"jtmvUHXj","dependency_type":"optional"}
         ]
       discord_icon_url: "https://raw.githubusercontent.com/Matthiesen-dev/.github/refs/heads/main/logo-transparent.png"
     secrets:
