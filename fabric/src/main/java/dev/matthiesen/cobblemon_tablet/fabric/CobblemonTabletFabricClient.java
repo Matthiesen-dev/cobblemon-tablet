@@ -9,21 +9,9 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.KeyMapping;
 
 public class CobblemonTabletFabricClient implements ClientModInitializer {
-    public static KeyMapping openPcKey;
-
     @Override
     public void onInitializeClient() {
         var instance = CobblemonTabletCommonClient.INSTANCE;
         instance.initialize();
-
-        openPcKey = KeyBindingHelper.registerKeyBinding(CobblemonTabletCommonClient.OPEN_PC_KEYBIND);
-
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (client.player != null) {
-                while (openPcKey.consumeClick()) {
-                    MatthiesenLib.networkingUtils.sendToServer(new OpenPcPayload());
-                }
-            }
-        });
     }
 }
