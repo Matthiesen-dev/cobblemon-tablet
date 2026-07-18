@@ -13,6 +13,9 @@ This mod adds a new item, the Cobblemon Tablet, which allows you to access your 
 - [Matthiesen Lib API](https://modrinth.com/mod/matthiesen-lib-api)
 - [Cobblemon](https://modrinth.com/mod/cobblemon)
 
+## Supports
+- [Accessories](https://modrinth.com/mod/accessories) - Add the Cobblemon Tablet as an accessory to your character!
+
 ## Docs
 
 Documentation for this mod can be found at [mods.matthiesen.dev](https://mods.matthiesen.dev/TODO/)
