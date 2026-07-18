@@ -1,5 +1,6 @@
 package dev.matthiesen.cobblemon_tablet.common;
 
+import dev.matthiesen.cobblemon_tablet.common.accessories.AccessoriesCompat;
 import dev.matthiesen.cobblemon_tablet.common.registry.NetworkingRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.CreativeModeTabRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.ItemRegistry;
@@ -23,6 +24,11 @@ public final class CobblemonTabletCommon extends AbstractCommonMod {
         ItemRegistry.init();
         CreativeModeTabRegistry.init();
         NetworkingRegistry.init();
+
+        if (isModLoaded("accessories")) {
+            createInfoLog("Accessories mod detected, initializing compatibility");
+            AccessoriesCompat.init();
+        }
 
         createInfoLog("Initialized");
     }

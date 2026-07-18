@@ -27,12 +27,12 @@ dependencies {
     mappings(loom.officialMojangMappings())
     neoForge(libs.neoforge)
 
-    libs.bundles.neoforgeModImplementation.get().forEach { dependency ->
-        modImplementation(dependency.copy()) { isTransitive = false }
-    }
+    modImplementation(libs.bundles.neoforgeModImplementation) { isTransitive = false }
     forgeRuntimeLibrary(libs.kotlinforforge) {
         exclude("net.neoforged.fancymodloader", "loader")
     }
+
+    forgeRuntimeLibrary(libs.bundles.neoforgeRuntimeLibrary)
 
     implementation(project(":common", configuration = "namedElements"))
     "developmentNeoForge"(project(":common", configuration = "namedElements")) {

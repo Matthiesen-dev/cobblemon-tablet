@@ -8,7 +8,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod(value = CobblemonTabletCommon.MOD_ID, dist = Dist.CLIENT)
-public class CobblemonTabletNeoForgeClient {
+public final class CobblemonTabletNeoForgeClient {
     public static CobblemonTabletCommonClient INSTANCE;
 
     public CobblemonTabletNeoForgeClient(IEventBus modBus) {

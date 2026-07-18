@@ -30,5 +30,8 @@
     "cobblemon": ">=1.7.3 <1.8.0",
     "matthiesen_lib_api": ">=1.11.3 <2.0.0",
     "matthiesen_lib": ">=1.11.3 <2.0.0"
+  },
+  "suggests": {
+    "accessories": ">=1.1.0-beta.52+1.21.1"
   }
 }
