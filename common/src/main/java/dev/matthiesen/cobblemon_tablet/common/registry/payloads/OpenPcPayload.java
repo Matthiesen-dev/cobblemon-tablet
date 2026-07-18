@@ -8,7 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 
 public record OpenPcPayload()  implements CustomPacketPayload {
-    public static final Type<OpenPcPayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CobblemonTabletCommon.MOD_ID, "open_pc"));
+    public static final Type<OpenPcPayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CobblemonTabletCommon.MOD_ID, "open_pc_tablet"));
     public static final StreamCodec<RegistryFriendlyByteBuf, OpenPcPayload> CODEC = StreamCodec.unit(new OpenPcPayload());
 
     @Override

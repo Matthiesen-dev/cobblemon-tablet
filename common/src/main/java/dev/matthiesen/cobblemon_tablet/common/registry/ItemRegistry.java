@@ -19,6 +19,6 @@ public final class ItemRegistry extends AbstractItemRegistry {
     public static final Supplier<TabletItem> TABLET_ITEM;
 
     static {
-        TABLET_ITEM = INSTANCE.register("tablet", TabletItem::new);
+        TABLET_ITEM = INSTANCE.register("pc_tablet", TabletItem::new);
     }
 }

@@ -20,7 +20,7 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
 
     static {
         OPEN_PC_KEYBIND = new KeyMapping(
-                "key.cobblemon_tablet.open_tablet_pc",
+                "key.cobblemon_tablet.open_pc_tablet",
                 InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_P,
                 "category.cobblemon_tablet.title"
@@ -44,6 +44,6 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
     @Override
     public void initialize() {
         createInfoLog("Loading client-side for " + CobblemonTabletCommon.MOD_NAME);
-        INSTANCE.registerKeybind("cobblemon_tablet_open_pc", OPEN_PC_KEYBIND_MAPPING);
+        INSTANCE.registerKeybind("cobblemon_tablet:open_pc_tablet", OPEN_PC_KEYBIND_MAPPING);
     }
 }
