@@ -6,7 +6,6 @@
   "icon": "cobblemon_tablet:gui/slot/tablet",
   "validators": [
     "accessories:tag",
-    "accessories:component",
-    "accessories:attribute"
+    "accessories:component"
   ]
 }
