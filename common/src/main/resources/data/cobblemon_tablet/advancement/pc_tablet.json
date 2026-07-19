@@ -1,0 +1,30 @@
+{
+  "parent": "cobblemon:root",
+  "display": {
+    "icon": {
+      "id": "cobblemon_tablet:pc_tablet"
+    },
+    "title": {
+      "translate": "advancements.cobblemon_tablet.pc_tablet"
+    },
+    "description": {
+      "translate": "advancements.cobblemon_tablet.pc_tablet.description"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cobblemon_tablet:pc_tablet"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

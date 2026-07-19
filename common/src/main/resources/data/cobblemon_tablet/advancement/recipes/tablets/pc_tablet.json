@@ -1,0 +1,47 @@
+{
+  "parent": "cobblemon_tablet:recipes/root",
+  "criteria": {
+    "has_glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:glass"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pc": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cobblemon:pc"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cobblemon_tablet:pc_tablet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_glass",
+      "has_pc",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cobblemon_tablet:pc_tablet"
+    ]
+  }
+}
