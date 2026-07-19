@@ -35,7 +35,7 @@ jobs:
           {"project_id":"cPmFkPpB","dependency_type":"required"},
           {"project_id":"jtmvUHXj","dependency_type":"optional"}
         ]
-      discord_icon_url: "https://raw.githubusercontent.com/Matthiesen-dev/.github/refs/heads/main/logo-transparent.png"
+      discord_icon_url: "https://raw.githubusercontent.com/Matthiesen-dev/.github/refs/heads/main/mod-logos/cobblemon-tablet.png"
     secrets:
       git_token: ${{ secrets.GITHUB_TOKEN }}
       MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
