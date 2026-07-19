@@ -13,6 +13,8 @@ This mod adds a new item, the PC Tablet, which allows you to access your PC from
 The PC Tablet also has a keybind to open the PC from anywhere, even if you don't have the tablet in hand. The default keybind is `V`, but you can change it in the controls menu. As well 
 as support for the [Accessories](https://modrinth.com/mod/accessories) mod, which allows you to equip the PC Tablet as an accessory keeping it out of your normal inventory.
 
+This mod is the multi-loader successor to my [PC on a Stick](https://modrinth.com/mod/cobblemon-pc-on-a-stick) mod, which relied on the Crafting on a Stick API to function.
+
 ## Requirements
 - [Matthiesen Lib API](https://modrinth.com/mod/matthiesen-lib-api)
 - [Cobblemon](https://modrinth.com/mod/cobblemon)
