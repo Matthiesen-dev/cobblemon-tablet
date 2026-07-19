@@ -5,17 +5,21 @@ import dev.matthiesen.cobblemon_tablet.common.utility.PlayerUtils;
 import dev.matthiesen.common.matthiesen_lib.MatthiesenLib;
 import dev.matthiesen.common.matthiesen_lib.core.network.PacketContext;
 import io.wispforest.accessories.api.AccessoriesCapability;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.Item;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
 public final class NetworkingRegistry {
     public static void init() {
-        MatthiesenLib.networkingUtils.registerC2S(PayloadsRegistry.OpenPcPayload.TYPE, PayloadsRegistry.OpenPcPayload.CODEC, NetworkingRegistry::openPcC2S);
+        MatthiesenLib.networkingUtils.registerC2S(OpenPcPayload.TYPE, OpenPcPayload.CODEC, NetworkingRegistry::openPcC2S);
     }
 
-    public static void openPcC2S(PayloadsRegistry.OpenPcPayload payload, PacketContext context) {
+    public static void openPcC2S(OpenPcPayload payload, PacketContext context) {
         if (context.player() instanceof ServerPlayer player) {
             // PC Tablet check
             if (isPlayerHoldingItem(player, ItemRegistry.PC_TABLET_ITEM)) {
@@ -40,5 +44,15 @@ public final class NetworkingRegistry {
             }
         }
         return false;
+    }
+
+    public record OpenPcPayload() implements CustomPacketPayload {
+        public static final Type<OpenPcPayload> TYPE = new Type<>(CobblemonTabletCommon.modResource("open_pc_tablet"));
+        public static final StreamCodec<RegistryFriendlyByteBuf, OpenPcPayload> CODEC = StreamCodec.unit(new OpenPcPayload());
+
+        @Override
+        public @NotNull Type<? extends CustomPacketPayload> type() {
+            return TYPE;
+        }
     }
 }
