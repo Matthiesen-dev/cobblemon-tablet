@@ -1,15 +1,15 @@
 {
-  "itemGroup.cobblemon_tablet.cobblemon_tablet_tab_title": "Cobblemon Tablet",
+  "accessories.slot.tablet": "Tablet",
+  "advancements.cobblemon_tablet.pc_tablet": "Going Portable",
+  "advancements.cobblemon_tablet.pc_tablet.description": "Craft a PC Tablet to access your PC from anywhere!",
+  "category.cobblemon_tablet.title": "Cobblemon Tablet",
   "item.cobblemon_tablet.pc_tablet": "PC Tablet",
   "item.cobblemon_tablet.pc_tablet.tooltip.keybind": "Press \"%s\" to open your PC.",
   "item.cobblemon_tablet.pc_tablet.tooltip.right-click": "Right-click",
   "item.cobblemon_tablet.pc_tablet.tooltip.right-click.p1": "Or \"%s\" with",
   "item.cobblemon_tablet.pc_tablet.tooltip.right-click.p2": "this tablet to open your PC.",
-  "messages.cobblemon_tablet.error.in_battle": "You cannot open the PC while in battle!",
-  "messages.cobblemon_tablet.error.failed_to_open_pc": "Failed to open the PC!",
+  "itemGroup.cobblemon_tablet.cobblemon_tablet_tab_title": "Cobblemon Tablet",
   "key.cobblemon_tablet.open_pc_tablet": "Open PC Tablet",
-  "category.cobblemon_tablet.title": "Cobblemon Tablet",
-  "accessories.slot.tablet": "Tablet",
-  "advancements.cobblemon_tablet.pc_tablet": "Going Portable",
-  "advancements.cobblemon_tablet.pc_tablet.description": "Craft a PC Tablet to access your PC from anywhere!"
+  "messages.cobblemon_tablet.error.in_battle": "You cannot open the PC while in battle!",
+  "messages.cobblemon_tablet.error.failed_to_open_pc": "Failed to open the PC!"
 }
