@@ -19,8 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public final class TabletItem extends Item {
-    public TabletItem() {
+public final class PCTabletItem extends Item {
+    public PCTabletItem() {
         super(new Item.Properties().stacksTo(1));
     }
 
@@ -40,7 +40,7 @@ public final class TabletItem extends Item {
 
         Component rightClick;
 
-        if (CobblemonTabletCommon.INSTANCE.isModLoaded("accessories")) {
+        if (CobblemonTabletCommon.isAccessoriesLoaded()) {
             var equipControl = Accessories.config().clientOptions.equipControl();
             if (Objects.requireNonNull(equipControl) == PlayerEquipControl.MUST_NOT_CROUCH) {
                 rightClick = Component.empty()

@@ -1,6 +1,6 @@
 package dev.matthiesen.cobblemon_tablet.common.accessories;
 
-import dev.matthiesen.cobblemon_tablet.common.item.TabletItem;
+import dev.matthiesen.cobblemon_tablet.common.item.PCTabletItem;
 import dev.matthiesen.cobblemon_tablet.common.platform.CobblemonTabletAccessoriesCompatPlatform;
 import io.wispforest.accessories.api.AccessoriesAPI;
 
@@ -12,8 +12,8 @@ public final class AccessoriesCompat {
 
     public static void init() {
         ACCESSORIES_COMPAT_PLATFORM.addItemRegistryCallback(item -> {
-            if (item instanceof TabletItem tabletItem) {
-                AccessoriesAPI.registerAccessory(item, new TabletItemAccessory<>(tabletItem));
+            if (item instanceof PCTabletItem pcTabletItem) {
+                AccessoriesAPI.registerAccessory(item, new PCTabletItemAccessory<>(pcTabletItem));
             }
         });
     }

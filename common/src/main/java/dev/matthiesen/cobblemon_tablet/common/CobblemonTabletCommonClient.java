@@ -1,7 +1,7 @@
 package dev.matthiesen.cobblemon_tablet.common;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import dev.matthiesen.cobblemon_tablet.common.registry.payloads.OpenPcPayload;
+import dev.matthiesen.cobblemon_tablet.common.registry.PayloadsRegistry;
 import dev.matthiesen.common.matthiesen_lib.MatthiesenLib;
 import dev.matthiesen.common.matthiesen_lib.abstracts.AbstractCommonClientMod;
 import dev.matthiesen.common.matthiesen_lib.core.interfaces.MatthiesenLibKeybindMapping;
@@ -35,7 +35,7 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
             @Override
             public void onClientTick() {
                 while (OPEN_PC_KEYBIND.consumeClick()) {
-                    MatthiesenLib.networkingUtils.sendToServer(new OpenPcPayload());
+                    MatthiesenLib.networkingUtils.sendToServer(PayloadsRegistry.openPC());
                 }
             }
         };

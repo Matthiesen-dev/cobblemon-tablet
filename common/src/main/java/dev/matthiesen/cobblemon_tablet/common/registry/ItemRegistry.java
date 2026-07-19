@@ -1,7 +1,7 @@
 package dev.matthiesen.cobblemon_tablet.common.registry;
 
 import dev.matthiesen.cobblemon_tablet.common.CobblemonTabletCommon;
-import dev.matthiesen.cobblemon_tablet.common.item.TabletItem;
+import dev.matthiesen.cobblemon_tablet.common.item.PCTabletItem;
 import dev.matthiesen.common.matthiesen_lib.registry.AbstractItemRegistry;
 
 import java.util.function.Supplier;
@@ -16,9 +16,9 @@ public final class ItemRegistry extends AbstractItemRegistry {
     public static void init() {
     }
 
-    public static final Supplier<TabletItem> TABLET_ITEM;
+    public static final Supplier<PCTabletItem> TABLET_ITEM;
 
     static {
-        TABLET_ITEM = INSTANCE.register("pc_tablet", TabletItem::new);
+        TABLET_ITEM = INSTANCE.register("pc_tablet", PCTabletItem::new);
     }
 }

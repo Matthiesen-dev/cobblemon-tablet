@@ -6,14 +6,24 @@ import dev.matthiesen.cobblemon_tablet.common.registry.CreativeModeTabRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.ItemRegistry;
 import dev.matthiesen.common.matthiesen_lib_api.abstracts.AbstractCommonMod;
 import dev.matthiesen.libs.faststats.Token;
+import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 
 public final class CobblemonTabletCommon extends AbstractCommonMod {
     public static final String MOD_ID = "cobblemon_tablet";
     public static final String MOD_NAME = "Cobblemon Tablet";
     public static @Token final String METRICS_TOKEN = "449c756e384ffac6ed88dd4d3de2f473";
+    public static final String ACCESSORIES_MOD_ID = "accessories";
 
     public static final CobblemonTabletCommon INSTANCE = new CobblemonTabletCommon();
+
+    public static boolean isAccessoriesLoaded() {
+        return INSTANCE.isModLoaded(ACCESSORIES_MOD_ID);
+    }
+
+    public static ResourceLocation modResource(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    }
 
     public CobblemonTabletCommon() {
         super(MOD_ID, MOD_NAME);
@@ -25,7 +35,7 @@ public final class CobblemonTabletCommon extends AbstractCommonMod {
         CreativeModeTabRegistry.init();
         NetworkingRegistry.init();
 
-        if (isModLoaded("accessories")) {
+        if (isAccessoriesLoaded()) {
             createInfoLog("Accessories mod detected, initializing compatibility");
             AccessoriesCompat.init();
         }
