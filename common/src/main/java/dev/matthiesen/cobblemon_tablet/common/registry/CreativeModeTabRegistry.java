@@ -24,8 +24,8 @@ public final class CreativeModeTabRegistry extends AbstractCreativeModeTabRegist
         TABLET_TAB = INSTANCE.registerSimpleCreativeTab(
                 "cobblemon_tablet_tab",
                 Component.translatable("itemGroup.cobblemon_tablet.cobblemon_tablet_tab_title"),
-                () -> new ItemStack(ItemRegistry.TABLET_ITEM.get()),
-                () -> List.of(new ItemStack(ItemRegistry.TABLET_ITEM.get()))
+                () -> new ItemStack(ItemRegistry.PC_TABLET_ITEM.get()),
+                () -> List.of(new ItemStack(ItemRegistry.PC_TABLET_ITEM.get()))
         );
     }
 }

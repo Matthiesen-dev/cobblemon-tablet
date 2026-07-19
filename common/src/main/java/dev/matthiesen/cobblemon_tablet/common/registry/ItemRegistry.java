@@ -16,9 +16,9 @@ public final class ItemRegistry extends AbstractItemRegistry {
     public static void init() {
     }
 
-    public static final Supplier<PCTabletItem> TABLET_ITEM;
+    public static final Supplier<PCTabletItem> PC_TABLET_ITEM;
 
     static {
-        TABLET_ITEM = INSTANCE.register("pc_tablet", PCTabletItem::new);
+        PC_TABLET_ITEM = INSTANCE.register("pc_tablet", PCTabletItem::new);
     }
 }
