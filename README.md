@@ -24,13 +24,23 @@ This mod is the multi-loader successor to my [PC on a Stick](https://modrinth.co
 
 ## Docs
 
-Documentation for this mod can be found at [mods.matthiesen.dev](https://mods.matthiesen.dev/TODO/)
+Documentation for this mod can be found at [mods.matthiesen.dev](https://mods.matthiesen.dev/cobblemon-tablet/)
 
 ## Version Compatibility
 
 | Minecraft Version | Mod Version |
 |-------------------|-------------|
 | 1.21.1            | 1.x.x       |
+
+## FastStats Metrics
+
+This mod uses [FastStats](https://faststats.dev) to collect anonymous usage statistics. This helps the developer understand
+how this mod is being used and improve it over time. You can learn more about the data collected and how it is used by visiting
+[FastStats: Information](https://faststats.dev/info).
+
+You can also view the data collected by this mod on the [FastStats: Cobblemon Tablet](https://faststats.dev/project/cobblemon-tablet) page.
+
+To opt out of this data collection, set the `enabled` property to `false` in the `<game_directory>/config/matthiesen_lib_api/metrics.properties` file.
 
 ## License
 
