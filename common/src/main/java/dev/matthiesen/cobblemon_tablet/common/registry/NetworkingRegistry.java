@@ -2,8 +2,7 @@ package dev.matthiesen.cobblemon_tablet.common.registry;
 
 import dev.matthiesen.cobblemon_tablet.common.CobblemonTabletCommon;
 import dev.matthiesen.cobblemon_tablet.common.utility.PlayerUtils;
-import dev.matthiesen.common.matthiesen_lib.MatthiesenLib;
-import dev.matthiesen.common.matthiesen_lib.core.network.PacketContext;
+import dev.matthiesen.matthiesen_core.common.core.network.PacketContext;
 import io.wispforest.accessories.api.AccessoriesCapability;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
@@ -16,7 +15,7 @@ import java.util.function.Supplier;
 
 public final class NetworkingRegistry {
     public static void init() {
-        MatthiesenLib.networkingUtils.registerC2S(OpenPcPayload.TYPE, OpenPcPayload.CODEC, NetworkingRegistry::openPcC2S);
+        CobblemonTabletCommon.INSTANCE.getNetworkingManager().registerC2S(OpenPcPayload.TYPE, OpenPcPayload.CODEC, NetworkingRegistry::openPcC2S);
     }
 
     public static void openPcC2S(OpenPcPayload payload, PacketContext context) {

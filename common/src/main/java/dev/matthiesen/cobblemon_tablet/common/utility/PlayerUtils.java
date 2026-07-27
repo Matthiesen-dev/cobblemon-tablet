@@ -8,7 +8,7 @@ import com.cobblemon.mod.common.api.storage.pc.link.PCLinkManager;
 import com.cobblemon.mod.common.net.messages.client.storage.pc.OpenPCPacket;
 import com.cobblemon.mod.common.util.PlayerExtensionsKt;
 import dev.matthiesen.cobblemon_tablet.common.CobblemonTabletCommon;
-import dev.matthiesen.common.matthiesen_lib_api.utility.SoundsPlayer;
+import dev.matthiesen.matthiesen_core.common.utility.SoundsPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;

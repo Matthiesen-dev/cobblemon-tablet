@@ -1,8 +1,7 @@
 # Cobblemon Tablet
 
 <div>
-  <img src="https://mods.matthiesen.dev/badges/matthiesenLibAPI.svg" alt="Matthiesen Lib API">
-  <img src="https://mods.matthiesen.dev/badges/matthiesenLib.svg" alt="Matthiesen Lib">
+  <img src="https://mods.matthiesen.dev/badges/matthiesenCore.svg" alt="Matthiesen Core">
   <img src="https://mods.matthiesen.dev/badges/cobblemon.svg" alt="Cobblemon">
 </div>
 
@@ -16,7 +15,7 @@ as support for the [Accessories](https://modrinth.com/mod/accessories) mod, whic
 > This mod is the multi-loader successor to my [PC on a Stick](https://modrinth.com/mod/cobblemon-pc-on-a-stick) mod, which relied on the Crafting on a Stick API to function and was limited to NeoForge only.
 
 ## Requirements
-- [Matthiesen Lib API](https://modrinth.com/mod/matthiesen-lib-api)
+- [Matthiesen Core](https://modrinth.com/mod/matthiesen-core)
 - [Cobblemon](https://modrinth.com/mod/cobblemon)
 
 ## Supports
@@ -40,7 +39,7 @@ how this mod is being used and improve it over time. You can learn more about th
 
 You can also view the data collected by this mod on the [FastStats: Cobblemon Tablet](https://faststats.dev/project/cobblemon-tablet) page.
 
-To opt out of this data collection, set the `enabled` property to `false` in the `<game_directory>/config/matthiesen_lib_api/metrics.properties` file.
+To opt out of this data collection, set the `enabled` property to `false` in the `<game_directory>/config/matthiesen_core/metrics.properties` file.
 
 ## License
 

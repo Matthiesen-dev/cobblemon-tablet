@@ -9,15 +9,13 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod(value = CobblemonTabletCommon.MOD_ID, dist = Dist.CLIENT)
 public final class CobblemonTabletNeoForgeClient {
-    public static CobblemonTabletCommonClient INSTANCE;
+    public static final CobblemonTabletCommonClient INSTANCE = CobblemonTabletCommonClient.INSTANCE;
 
     public CobblemonTabletNeoForgeClient(IEventBus modBus) {
-        INSTANCE = CobblemonTabletCommonClient.INSTANCE;
         modBus.addListener(this::clientSetup);
     }
 
     public void clientSetup(FMLClientSetupEvent event) {
         INSTANCE.initialize();
     }
-
 }
