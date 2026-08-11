@@ -4,8 +4,8 @@ import dev.matthiesen.cobblemon_tablet.common.accessories.AccessoriesCompat;
 import dev.matthiesen.cobblemon_tablet.common.registry.NetworkingRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.CreativeModeTabRegistry;
 import dev.matthiesen.cobblemon_tablet.common.registry.ItemRegistry;
-import dev.matthiesen.common.matthiesen_lib_api.abstracts.AbstractCommonMod;
 import dev.matthiesen.libs.faststats.Token;
+import dev.matthiesen.matthiesen_core.common.AbstractCommonMod;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 
@@ -18,7 +18,7 @@ public final class CobblemonTabletCommon extends AbstractCommonMod {
     public static final CobblemonTabletCommon INSTANCE = new CobblemonTabletCommon();
 
     public static boolean isAccessoriesLoaded() {
-        return INSTANCE.isModLoaded(ACCESSORIES_MOD_ID);
+        return INSTANCE.getCommonUtils().isModLoaded(ACCESSORIES_MOD_ID);
     }
 
     public static ResourceLocation modResource(String path) {
@@ -41,11 +41,6 @@ public final class CobblemonTabletCommon extends AbstractCommonMod {
         }
 
         createInfoLog("Initialized");
-    }
-
-    @Override
-    public Runnable reload() {
-        return () -> createInfoLog("Reloaded");
     }
 
     @Override

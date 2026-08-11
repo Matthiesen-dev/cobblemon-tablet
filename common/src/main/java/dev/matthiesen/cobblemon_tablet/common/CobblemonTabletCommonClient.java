@@ -2,9 +2,8 @@ package dev.matthiesen.cobblemon_tablet.common;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import dev.matthiesen.cobblemon_tablet.common.registry.NetworkingRegistry;
-import dev.matthiesen.common.matthiesen_lib.MatthiesenLib;
-import dev.matthiesen.common.matthiesen_lib.abstracts.AbstractCommonClientMod;
-import dev.matthiesen.common.matthiesen_lib.core.interfaces.MatthiesenLibKeybindMapping;
+import dev.matthiesen.matthiesen_core.common.AbstractCommonClientMod;
+import dev.matthiesen.matthiesen_core.common.api.client.keybinds.KeybindMapping;
 import net.minecraft.client.KeyMapping;
 import org.lwjgl.glfw.GLFW;
 
@@ -16,7 +15,7 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
     }
 
     public static final KeyMapping OPEN_PC_KEYBIND;
-    public static final MatthiesenLibKeybindMapping OPEN_PC_KEYBIND_MAPPING;
+    public static final KeybindMapping OPEN_PC_KEYBIND_MAPPING;
 
     static {
         OPEN_PC_KEYBIND = new KeyMapping(
@@ -26,7 +25,7 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
                 "category.cobblemon_tablet.title"
         );
 
-        OPEN_PC_KEYBIND_MAPPING = new MatthiesenLibKeybindMapping() {
+        OPEN_PC_KEYBIND_MAPPING = new KeybindMapping() {
             @Override
             public KeyMapping getKeybind() {
                 return OPEN_PC_KEYBIND;
@@ -35,7 +34,7 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
             @Override
             public void onClientTick() {
                 while (OPEN_PC_KEYBIND.consumeClick()) {
-                    MatthiesenLib.networkingUtils.sendToServer(new NetworkingRegistry.OpenPcPayload());
+                    CobblemonTabletCommon.INSTANCE.getNetworkingManager().sendToServer(new NetworkingRegistry.OpenPcPayload());
                 }
             }
         };
@@ -44,6 +43,6 @@ public final class CobblemonTabletCommonClient extends AbstractCommonClientMod {
     @Override
     public void initialize() {
         createInfoLog("Loading client-side for " + CobblemonTabletCommon.MOD_NAME);
-        INSTANCE.registerKeybind("cobblemon_tablet:open_pc_tablet", OPEN_PC_KEYBIND_MAPPING);
+        INSTANCE.getKeybindingsManager().registerKeybind("cobblemon_tablet:open_pc_tablet", OPEN_PC_KEYBIND_MAPPING);
     }
 }

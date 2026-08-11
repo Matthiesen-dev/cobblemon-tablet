@@ -1,9 +1,10 @@
 package dev.matthiesen.cobblemon_tablet.common.registry;
 
 import dev.matthiesen.cobblemon_tablet.common.CobblemonTabletCommon;
-import dev.matthiesen.common.matthiesen_lib.registry.AbstractCreativeModeTabRegistry;
+import dev.matthiesen.matthiesen_core.common.registry.AbstractCreativeModeTabRegistry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
@@ -16,7 +17,12 @@ public final class CreativeModeTabRegistry extends AbstractCreativeModeTabRegist
         super(CobblemonTabletCommon.MOD_ID);
     }
 
-    public static void init() {}
+    public static void init() {
+        INSTANCE.registerTabAugmentation(
+                CreativeModeTabs.TOOLS_AND_UTILITIES,
+                () -> ItemRegistry.PC_TABLET_ITEM.get().getDefaultInstance()
+        );
+    }
 
     public static final Supplier<CreativeModeTab> TABLET_TAB;
 

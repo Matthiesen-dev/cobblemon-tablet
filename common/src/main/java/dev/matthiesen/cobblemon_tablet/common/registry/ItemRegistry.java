@@ -2,7 +2,7 @@ package dev.matthiesen.cobblemon_tablet.common.registry;
 
 import dev.matthiesen.cobblemon_tablet.common.CobblemonTabletCommon;
 import dev.matthiesen.cobblemon_tablet.common.item.PCTabletItem;
-import dev.matthiesen.common.matthiesen_lib.registry.AbstractItemRegistry;
+import dev.matthiesen.matthiesen_core.common.registry.AbstractItemRegistry;
 
 import java.util.function.Supplier;
 
