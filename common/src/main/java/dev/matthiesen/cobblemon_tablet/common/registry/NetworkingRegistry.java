@@ -2,7 +2,7 @@ package dev.matthiesen.cobblemon_tablet.common.registry;
 
 import dev.matthiesen.cobblemon_tablet.common.CobblemonTabletCommon;
 import dev.matthiesen.cobblemon_tablet.common.utility.PlayerUtils;
-import dev.matthiesen.matthiesen_core.common.core.network.PacketContext;
+import dev.matthiesen.matthiesen_core.common.api.platform.network.PacketContext;
 import io.wispforest.accessories.api.AccessoriesCapability;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;

@@ -1,10 +1,8 @@
 package dev.matthiesen.cobblemon_tablet.common;
 
 import dev.matthiesen.cobblemon_tablet.common.accessories.AccessoriesCompat;
-import dev.matthiesen.cobblemon_tablet.common.registry.NetworkingRegistry;
-import dev.matthiesen.cobblemon_tablet.common.registry.CreativeModeTabRegistry;
-import dev.matthiesen.cobblemon_tablet.common.registry.ItemRegistry;
-import dev.matthiesen.libs.faststats.Token;
+import dev.matthiesen.cobblemon_tablet.common.registry.*;
+import dev.faststats.Token;
 import dev.matthiesen.matthiesen_core.common.AbstractCommonMod;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
